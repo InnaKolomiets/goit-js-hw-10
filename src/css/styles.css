@@ -1,0 +1,81 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+select.breed-select {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.loader{
+      display: none;
+      position: relative;
+      height: 12px;
+      width: 80%;
+      border: 1px solid #fff;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .loader::after {
+      content: '';
+      width: 40%;
+      height: 100%;
+      background: rgb(150, 148, 150);
+      position: absolute;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      animation: animloader 2s linear infinite;
+    }
+
+    @keyframes animloader {
+      0% {
+        left: 0;
+        transform: translateX(-100%);
+      }
+      100% {
+        left: 100%;
+        transform: translateX(0%);
+      }
+    }
+
+
+.error {
+  display: none;
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cat-info {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.cat-info img {
+  max-width: 600px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.cat-info p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.cat-info span {
+  font-weight: bold;
+  color: #333;
+}

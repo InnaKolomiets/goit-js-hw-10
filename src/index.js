@@ -13,6 +13,8 @@ const fillBreedOptions = breeds => {
     option.text = breed.name;
     breedSelect.appendChild(option);
   });
+  loader.style.display = "none";
+  breedSelect.style.display = "block";
 }
 
 const displayCatInfo = cat => {
